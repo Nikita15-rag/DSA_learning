@@ -80,6 +80,9 @@ int main(){
 }*/
 
 
+
+
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -131,10 +134,22 @@ int pop(struct stack * ptr){
         ptr->arr[ptr->top] ;
         ptr->top = ptr->top-1;
         printf("poped value %d \n", value) ;
-    }    
-}
+    }     
+}   
+    
+    // OP 5
+    int peek(struct stack * p, int i){
+        if( (p->top - i + 1) < 0){
+            printf("invalid!!");
+            return -1;
+        }
+        else{
+            return p->arr[p->top - i + 1];
+        }
+    } 
 
-int main(){
+  
+    int main(){
     // memory me allocate krane ke liye
     struct stack * s = (struct stack *)malloc(sizeof(struct stack));
     s->size = 4;
@@ -146,20 +161,28 @@ int main(){
     printf("Pushed %d in stack \n",push(s, 12)); 
     printf("Pushed %d in stack \n",push(s, 46)); 
     printf("Pushed %d in stack \n",push(s, 56)); 
-    printf("Pushed %d in stack \n",push(s, 23)); 
+    printf("Pushed %d in stack \n",push(s, 23));
     printf("%d\n", isFull(s));
     printf("%d\n\n", isEmpty(s));
 
 
-    printf("%d\n", isFull(s));
+   /*printf("%d\n", isFull(s));
     printf("%d\n", isEmpty(s));
     pop(s);  // Last in first out!
     pop(s);  // Last in first out!
     pop(s);  // Last in first out!
     pop(s);  // Last in first out!
     printf("%d\n", isFull(s));
-    printf("%d\n", isEmpty(s));
+    printf("%d\n", isEmpty(s));*/
 
-
+    // LIFO method followed 
+    for(int j = 1; j <= s->top + 1; j++){
+    printf("the value at position %d is %d\n ",j,peek(s,j));
+    }
+    
     return 0;
-}
+}    
+
+
+
+
