@@ -137,19 +137,19 @@ int pop(struct stack * ptr){
     }     
 }   
     
-    // OP 5
-    int peek(struct stack * p, int i){
-        if( (p->top - i + 1) < 0){
-            printf("invalid!!");
-            return -1;
-        }
-        else{
-            return p->arr[p->top - i + 1];
-        }
-    } 
+// OP 5
+int peek(struct stack * p, int i){
+    if( (p->top - i + 1) < 0){
+        printf("invalid!!");
+        return -1;
+    }
+    else{
+        return p->arr[p->top - i + 1];
+    }
+} 
 
   
-    int main(){
+int main(){
     // memory me allocate krane ke liye
     struct stack * s = (struct stack *)malloc(sizeof(struct stack));
     s->size = 4;
