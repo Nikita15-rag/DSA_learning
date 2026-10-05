@@ -118,12 +118,13 @@ char * InfixToPostfix(char * infix){
     return postfix;
 }
 
+
 int main(){
     // this function does not tell the validity of expressions 
     char * infix = "a+b/c-d*a";
-    printf("the postfix is %s \n\n", InfixToPostfix(infix));
+    printf("the prefix is %s \n\n", InfixToPostfix(infix));
 
     char * infix1 = "x-y/z-k*d";
-    printf("the postfix is %s \n", InfixToPostfix(infix1));
+    printf("the prefix is %s \n", InfixToPostfix(infix1));
    return 0;
 }
