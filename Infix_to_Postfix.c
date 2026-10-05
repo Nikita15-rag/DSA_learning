@@ -118,8 +118,6 @@ char * InfixToPostfix(char * infix){
     return postfix;
 }
 
-
-
 int main(){
     // this function does not tell the validity of expressions 
     char * infix = "a+b/c-d*a";
