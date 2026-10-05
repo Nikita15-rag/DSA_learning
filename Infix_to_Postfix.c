@@ -126,5 +126,8 @@ int main(){
 
     char * infix1 = "x-y/z-k*d";
     printf("the prefix is %s \n", InfixToPostfix(infix1));
+
+    char * infix2 = "p*q/a+q";
+    printf("the prefix is %s \n", InfixToPostfix(infix2));
    return 0;
 }
