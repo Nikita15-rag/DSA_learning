@@ -212,11 +212,20 @@ int paranthesisMatch(char * exp){
 int main(){
     // this function does not tell the validity of expressions 
     char * exp = "{2 * [(3 - 6) + 9]}";
+    
     if(paranthesisMatch(exp)){
-        printf("the paranthesis is matching");
+        printf("the paranthesis is matching\n");
     }
     else{
-        printf("the paranthesis is not matching");
+        printf("the paranthesis is not matching\n");
+    }
+    
+    char * exp1 = "{2 * [3 - 6) + 9]}";
+    if(paranthesisMatch(exp1)){
+        printf("the paranthesis is matching\n");
+    }
+    else{
+        printf("the paranthesis is not matching\n");
     }
    return 0;
 }
