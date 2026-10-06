@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-// Circular Linked List
+// Circular Linked List and Reverse traversal
 
 struct node{
     int data;
