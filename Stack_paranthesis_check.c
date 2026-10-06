@@ -1,4 +1,8 @@
-/*#include<stdio.h>
+/*
+
+// SINGLE TYPE PARANTHESIS MATCHING
+
+#include<stdio.h>
 #include<stdlib.h>
 
 struct stack {
