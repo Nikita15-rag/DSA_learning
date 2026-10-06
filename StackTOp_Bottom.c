@@ -9,7 +9,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-// STACKTOP
+// STACK_TOP and STACK_BOTTOM
+
 struct stack{
     int top;
     int * arr;
