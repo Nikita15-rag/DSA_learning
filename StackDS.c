@@ -1,7 +1,7 @@
 //stack is like a container and implementation happens in LIFO order
 //fixed size array creatoin , top element
 
-// STACK AND OPERATIONS ON STACK
+// STACK 
 
 /*#include<stdio.h>
 #include<stdlib.h>
@@ -81,7 +81,7 @@ int main(){
 
 
 
-
+// OPERATIONS ON STACK
 
 #include<stdio.h>
 #include<stdlib.h>
