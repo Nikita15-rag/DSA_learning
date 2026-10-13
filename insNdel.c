@@ -2,11 +2,12 @@
 #include<stdio.h>
 
 int delput(int arr[], int size, int element, int capacity, int index){
-    if (size >= capacity ){
+    if (size >= capacity || index > size|| index <0 ){
+        printf("invalid");
         return -1;
     }
 
-    for(int i = index ; i >= size-1; i++){
+    for(int i = index ; i < size-1; i++){
         arr[i] = arr[i+1];
     }
     arr[index] = element;
@@ -21,7 +22,7 @@ void display(int arr[],int size){
 
 int main(){
     int arr[10] = {1,3,5,7,9,11};
-    int size = 6, element =233, index = 2;
+    int size = 6, element =233, index = 6;
     display(arr, size);
     printf("\n");
     delput(arr, size, 233, 10, index);

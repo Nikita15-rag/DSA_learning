@@ -74,17 +74,17 @@ int peek(struct stack * p, int i){
 } 
 
 // OP - 6  
-int StackTop(struct stack * s){
+int StackBottom(struct stack * s){
     return s->arr[0];
 }
 
 // OP - 7 
-int StackBottom(struct stack * s){
+int StackTop(struct stack * s){
     return s->arr[s->top];
 }
 
 int main(){
-    struct stack * s = (struct stack *)malloc(s->size * sizeof(struct stack));
+    struct stack * s = (struct stack *)malloc(sizeof(struct stack));
     s->top = -1;
     s->size = 10;
     s->arr = (int *)malloc(s->size * sizeof(int));

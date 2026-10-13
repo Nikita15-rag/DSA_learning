@@ -86,5 +86,11 @@ int main(){
     indInsertion(arr, size , element , 100, index);
     size += 1;
     display(arr , size);
+    int element1 =33;
+    indInsertion(arr, size , element1 , 100, index);
+    size += 1;
+    display(arr , size);
     return 0;
 }
+ 
+
