@@ -94,7 +94,7 @@ void quicksort(int  A[], int low, int high)
 
     if (low < high)
     {   partitionIndex = partition(A, low, high);
-        printArray(A, 8);
+        printArray(A, 9);
         quicksort(A, low, partitionIndex - 1);  // sort left subarray
         quicksort(A, partitionIndex + 1, high); // sort right subarray
     }
@@ -115,8 +115,8 @@ int main()
     // printArray(A, n);
     //quicksort(A, 0, n-1);
     // printArray(A, n);
-    int A2[] = {2,6,1,9,4,6,10,9};
-    int n = 8;
+    int A2[] = {2,4,1,9,12,24,5,1,33};
+    int n = 9;
     quicksort(A2, 0, n-1);
     return 0;
 }
