@@ -56,12 +56,12 @@ int main(){
     struct node * p4 = createNode(26);
     
     // tree representtaion of BT
-    /*      2
-           / \
-          3   44
-         / \  
-         12  26  
-    */
+    //       2
+    //      / \
+    //     3   44
+    //    / \  
+    //   12  26  
+    
    
    // Linking the nodes
    p->left = p1;
